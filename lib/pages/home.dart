@@ -16,7 +16,8 @@ class HomePage extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          const Column(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: EdgeInsets.only(left: 20),
@@ -28,6 +29,18 @@ class HomePage extends StatelessWidget {
                       fontSize: 18),
                 ),
               ),
+              SizedBox(
+                height: 15,
+              ),
+              Container(
+                height: 150,
+                color: Colors.green,
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container();
+                  },
+                ),
+              )
             ],
           )
         ],
